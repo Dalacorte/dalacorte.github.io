@@ -7,7 +7,7 @@ see you space cowboy
 30 x
 1 x
 2 x
-3
+3 x
 4
 5
 6
