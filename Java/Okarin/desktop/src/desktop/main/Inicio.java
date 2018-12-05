@@ -92,12 +92,12 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        LabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/imagens/icon.png"))); // NOI18N
+        LabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/icon.png"))); // NOI18N
 
         LabelBoasVindas.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         LabelBoasVindas.setText("Bem-vindo, Okarin");
 
-        LabelUser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/imagens/user.png"))); // NOI18N
+        LabelUser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/user.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -122,7 +122,7 @@ public class Inicio extends javax.swing.JFrame {
                             .addComponent(ButtonLinguagens, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(LabelIcon)))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

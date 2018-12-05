@@ -60,7 +60,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Component id="LabelIcon" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="37" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="LabelNome" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="LabelLink" min="-2" max="-2" attributes="0"/>
@@ -75,7 +75,7 @@
     <Component class="javax.swing.JLabel" name="LabelIcon">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/desktop/imagens/icon.png"/>
+          <Image iconType="3" name="/desktop/image/icon.png"/>
         </Property>
       </Properties>
     </Component>

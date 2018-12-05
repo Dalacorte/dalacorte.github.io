@@ -54,7 +54,7 @@
                       <Component id="LabelIcon" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="15" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -159,7 +159,7 @@
     <Component class="javax.swing.JLabel" name="LabelIcon">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/desktop/imagens/icon.png"/>
+          <Image iconType="3" name="/desktop/image/icon.png"/>
         </Property>
       </Properties>
     </Component>
@@ -174,7 +174,7 @@
     <Component class="javax.swing.JLabel" name="LabelUser">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/desktop/imagens/user.png"/>
+          <Image iconType="3" name="/desktop/image/user.png"/>
         </Property>
       </Properties>
     </Component>

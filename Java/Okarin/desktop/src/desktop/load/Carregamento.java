@@ -42,7 +42,7 @@ public class Carregamento extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(300, 300));
         setSize(new java.awt.Dimension(300, 300));
 
-        LabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/imagens/icon.png"))); // NOI18N
+        LabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/icon.png"))); // NOI18N
 
         LabelLink.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         LabelLink.setText("https://www.elixirtcc.com");
@@ -78,7 +78,7 @@ public class Carregamento extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(LabelIcon)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(LabelNome)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(LabelLink)

@@ -25,7 +25,6 @@ public class Entrar extends javax.swing.JFrame {
     public Entrar() {
         initComponents();
         setTitle("Entrar");
-        setSize(400,400);
         setResizable(false);
         getContentPane().setBackground(Color.white);
     }
@@ -92,7 +91,7 @@ public class Entrar extends javax.swing.JFrame {
             }
         });
 
-        LabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/imagens/icon.png"))); // NOI18N
+        LabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/icon.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
