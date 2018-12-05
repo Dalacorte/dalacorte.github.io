@@ -1,4 +1,4 @@
-see you space cowboy
+see you space cowboy ;)
 
 26 x
 27 x
@@ -10,7 +10,7 @@ see you space cowboy
 3 x
 4 x
 5 x
-6
+6 
 7
 8
 9
