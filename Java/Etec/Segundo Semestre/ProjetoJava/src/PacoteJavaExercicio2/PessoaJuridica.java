@@ -13,6 +13,7 @@ public class PessoaJuridica extends Cliente {
     
     private String nome;
     private String cnpj;
+    private String endereco;
 
     public String getNome() {
         return nome;
@@ -37,6 +38,5 @@ public class PessoaJuridica extends Cliente {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
-    private String endereco;
     
 }

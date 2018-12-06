@@ -9,14 +9,17 @@ package PacoteJavaExercicio2;
  *
  * @author LAB
  */
-public class VeiculosDisponiveis {
+public class Automovel extends Veiculo {
     
-    
-    private String reserva(String reserva){
-        
-       
-        return reserva;
-}
+    private String tipoAutomovel;
+
+    public String getTipoAutomovel() {
+        return tipoAutomovel;
+    }
+
+    public void setTipoAutomovel(String tipoAutomovel) {
+        this.tipoAutomovel = tipoAutomovel;
+    }
     
     
 }

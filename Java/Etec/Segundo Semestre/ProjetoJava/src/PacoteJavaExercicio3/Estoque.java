@@ -9,8 +9,27 @@ package PacoteJavaExercicio3;
  *
  * @author Okarin
  */
-public class Estoque {
-    
-    
-    
+public abstract class Estoque extends Produto {
+
+    private int estoque;
+
+    public int getEstoque() {
+        return estoque;
+    }
+
+    public void setEstoque(int estoque) {
+        this.estoque = estoque;
+    }
+
+    @Override
+    public double getQuantidade() {
+
+        if (estoque <= 0) {
+            System.out.println("Não possui mais no estoque. \n Tipo do produto: "+ getTipoProduto());
+        }else{
+            estoque -= super.getQuantidade();
+        }
+        return this.estoque;
+    }
+
 }
