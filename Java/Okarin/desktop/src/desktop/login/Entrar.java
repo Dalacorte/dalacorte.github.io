@@ -10,12 +10,13 @@ import java.awt.Color;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 import javax.swing.JOptionPane;
-import desktop.load.Carregamento;
-import desktop.load.Carregamento;
+import desktop.login.load.Carregamento;
+import desktop.login.load.Carregamento;
+import javax.swing.ImageIcon;
 
 /**
  *
- * @author alunoead
+ * @author Okarin
  */
 public class Entrar extends javax.swing.JFrame {
 
@@ -24,9 +25,14 @@ public class Entrar extends javax.swing.JFrame {
      */
     public Entrar() {
         initComponents();
+        setSize(400, 450);
+        setLocationRelativeTo(null);
         setTitle("Entrar");
         setResizable(false);
         getContentPane().setBackground(Color.white);
+        setDefaultCloseOperation(Entrar.EXIT_ON_CLOSE);
+        ImageIcon img = new ImageIcon("F:\\desktop\\src\\desktop\\image\\icon.png");
+        setIconImage(img.getImage());
     }
 
     /**
@@ -55,7 +61,7 @@ public class Entrar extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(250, 250));
 
         ButtonAjuda.setBackground(new java.awt.Color(88, 63, 105));
-        ButtonAjuda.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        ButtonAjuda.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         ButtonAjuda.setText("Ajuda");
         ButtonAjuda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,7 +70,7 @@ public class Entrar extends javax.swing.JFrame {
         });
 
         TextUsuario.setBackground(new java.awt.Color(103, 79, 117));
-        TextUsuario.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        TextUsuario.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         TextUsuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         TextUsuario.setText("Usuário");
         TextUsuario.setName(""); // NOI18N
@@ -78,12 +84,12 @@ public class Entrar extends javax.swing.JFrame {
         LabelVersao.setText("Versão: 0.01");
 
         PasswordSenha.setBackground(new java.awt.Color(103, 79, 117));
-        PasswordSenha.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        PasswordSenha.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         PasswordSenha.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         PasswordSenha.setText("Senha");
 
         ButtonEntrar.setBackground(new java.awt.Color(255, 255, 255));
-        ButtonEntrar.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        ButtonEntrar.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         ButtonEntrar.setText("Entrar");
         ButtonEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,8 +122,9 @@ public class Entrar extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
                 .addComponent(LabelIcon)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(TextUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(PasswordSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -137,11 +144,8 @@ public class Entrar extends javax.swing.JFrame {
 
     private void ButtonAjudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonAjudaActionPerformed
         // TODO add your handling code here:
-        // chamando a janela ajuda
-        
         Ajuda a = new Ajuda();
-        a.setVisible(true);
-        
+        a.setVisible(true);    
     }//GEN-LAST:event_ButtonAjudaActionPerformed
 
     private void TextUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextUsuarioActionPerformed
@@ -215,5 +219,4 @@ public class Entrar extends javax.swing.JFrame {
     private void systemExit(){
         WindowEvent winCloseing = new WindowEvent(this, WindowEvent.WINDOW_CLOSING);
     }
-
 }

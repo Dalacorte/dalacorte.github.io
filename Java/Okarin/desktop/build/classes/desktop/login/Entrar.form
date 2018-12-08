@@ -7,7 +7,7 @@
       <Color blue="ff" green="ff" red="ff" type="rgb"/>
     </Property>
     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-      <Color id="Default Cursor"/>
+      <Color id="Cursor Padr&#xe3;o"/>
     </Property>
     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
       <Font name="Monospaced" size="13" style="0"/>
@@ -69,8 +69,9 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="15" max="32767" attributes="0"/>
               <Component id="LabelIcon" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="TextUsuario" min="-2" pref="40" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="PasswordSenha" min="-2" pref="40" max="-2" attributes="0"/>
@@ -93,7 +94,7 @@
           <Color blue="69" green="3f" red="58" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="13" style="0"/>
+          <Font name="Monospaced" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Ajuda"/>
       </Properties>
@@ -107,7 +108,7 @@
           <Color blue="75" green="4f" red="67" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="13" style="0"/>
+          <Font name="Monospaced" size="18" style="0"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Usu&#xe1;rio"/>
@@ -131,7 +132,7 @@
           <Color blue="75" green="4f" red="67" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="13" style="0"/>
+          <Font name="Monospaced" size="18" style="0"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Senha"/>
@@ -143,7 +144,7 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="13" style="0"/>
+          <Font name="Monospaced" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Entrar"/>
       </Properties>

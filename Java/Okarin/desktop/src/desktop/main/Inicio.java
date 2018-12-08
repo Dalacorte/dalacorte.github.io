@@ -6,7 +6,9 @@
 package desktop.main;
 
 import desktop.java.Java;
+import desktop.login.Entrar;
 import java.awt.Color;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -19,10 +21,15 @@ public class Inicio extends javax.swing.JFrame {
      */
     public Inicio() {
         initComponents();
+        setSize(465, 400);
+        setLocationRelativeTo(null);
         setTitle("Inicio");
-        setSize(400, 400);
         setResizable(false);
         getContentPane().setBackground(Color.white);
+        setDefaultCloseOperation(Inicio.HIDE_ON_CLOSE);
+        ImageIcon img = new ImageIcon("F:\\desktop\\src\\desktop\\image\\icon.png");
+        setIconImage(img.getImage());
+        ButtonConfiguracoes.setEnabled(false);
     }
 
     /**
@@ -48,7 +55,7 @@ public class Inicio extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(300, 300));
 
         ButtonLinguagens.setBackground(new java.awt.Color(88, 63, 105));
-        ButtonLinguagens.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        ButtonLinguagens.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         ButtonLinguagens.setText("Minhas linguagens");
         ButtonLinguagens.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,7 +64,7 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         ButtonConfiguracoes.setBackground(new java.awt.Color(88, 63, 105));
-        ButtonConfiguracoes.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        ButtonConfiguracoes.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         ButtonConfiguracoes.setText("Configurações da conta");
         ButtonConfiguracoes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,7 +73,7 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         ButtonSite.setBackground(new java.awt.Color(88, 63, 105));
-        ButtonSite.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        ButtonSite.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         ButtonSite.setText("Ir para o site");
         ButtonSite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,7 +82,7 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         ButtonSair.setBackground(new java.awt.Color(88, 63, 105));
-        ButtonSair.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        ButtonSair.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         ButtonSair.setText("Sair");
         ButtonSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,7 +91,7 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         ButtonInformacoes.setBackground(new java.awt.Color(88, 63, 105));
-        ButtonInformacoes.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        ButtonInformacoes.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         ButtonInformacoes.setText("Informações do programa");
         ButtonInformacoes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,16 +111,9 @@ public class Inicio extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(LabelBoasVindas)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(71, 71, 71)
-                                .addComponent(LabelUser))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(ButtonInformacoes, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ButtonConfiguracoes, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -121,7 +121,13 @@ public class Inicio extends javax.swing.JFrame {
                             .addComponent(ButtonSite, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ButtonLinguagens, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(LabelIcon)))
+                        .addComponent(LabelIcon))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(51, 51, 51)
+                        .addComponent(LabelBoasVindas))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(118, 118, 118)
+                        .addComponent(LabelUser)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(

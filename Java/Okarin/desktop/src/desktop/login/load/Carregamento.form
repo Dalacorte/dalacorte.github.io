@@ -2,6 +2,7 @@
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[300, 300]"/>
     </Property>
@@ -31,51 +32,69 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="LabelUsuario" min="-2" max="-2" attributes="0"/>
-                  <Component id="LabelSenha" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="LabelCriador" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="ProgressBar" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="LabelIcon" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="203" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+              <Component id="LabelLink" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="65" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="LabelNome" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Component id="LabelIcon" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="LabelNome" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="LabelUsuario" min="-2" max="-2" attributes="0"/>
+              <Component id="LabelLink" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="LabelSenha" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="285" max="32767" attributes="0"/>
-              <Component id="LabelCriador" min="-2" max="-2" attributes="0"/>
+              <Component id="ProgressBar" min="-2" pref="30" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="LabelSenha">
+    <Component class="javax.swing.JLabel" name="LabelIcon">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="18" style="0"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/desktop/image/icon.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Senha padr&#xe3;o: 0"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelUsuario">
+    <Component class="javax.swing.JProgressBar" name="ProgressBar">
+    </Component>
+    <Component class="javax.swing.JLabel" name="LabelLink">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Monospaced" size="18" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Usu&#xe1;rio padr&#xe3;o: 0"/>
+        <Property name="text" type="java.lang.String" value="https://www.elixirtcc.com"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelCriador">
+    <Component class="javax.swing.JLabel" name="LabelNome">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="18" style="0"/>
+          <Font name="Monospaced" size="36" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Criador: Okarin"/>
+        <Property name="text" type="java.lang.String" value="Elixir"/>
       </Properties>
     </Component>
   </SubComponents>

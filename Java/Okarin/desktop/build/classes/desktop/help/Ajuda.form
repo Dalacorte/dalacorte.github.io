@@ -35,7 +35,7 @@
                   <Component id="LabelSenha" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="LabelCriador" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="204" max="32767" attributes="0"/>
+              <EmptySpace pref="203" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -46,7 +46,7 @@
               <Component id="LabelUsuario" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="LabelSenha" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="256" max="32767" attributes="0"/>
+              <EmptySpace pref="285" max="32767" attributes="0"/>
               <Component id="LabelCriador" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -57,7 +57,7 @@
     <Component class="javax.swing.JLabel" name="LabelSenha">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="13" style="0"/>
+          <Font name="Monospaced" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Senha padr&#xe3;o: 0"/>
       </Properties>
@@ -65,7 +65,7 @@
     <Component class="javax.swing.JLabel" name="LabelUsuario">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="13" style="0"/>
+          <Font name="Monospaced" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Usu&#xe1;rio padr&#xe3;o: 0"/>
       </Properties>
@@ -73,7 +73,7 @@
     <Component class="javax.swing.JLabel" name="LabelCriador">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="13" style="0"/>
+          <Font name="Monospaced" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Criador: Okarin"/>
       </Properties>

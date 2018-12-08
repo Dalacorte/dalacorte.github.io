@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package desktop.help;
+package desktop.login.load;
 
 import desktop.login.Entrar;
 import java.awt.Color;
@@ -11,21 +11,20 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author alunoead
+ * @author archwinlinu
  */
-public class Ajuda extends javax.swing.JFrame {
+public class Carregamento extends javax.swing.JFrame {
 
     /**
-     * Creates new form Ajuda
+     * Creates new form Carregamento
      */
-    public Ajuda() {
+    public Carregamento() {
         initComponents();
         setSize(400, 400);
         setLocationRelativeTo(null);
-        setTitle("Ajuda");
+        setTitle("Carregamento");
         setResizable(false);
         getContentPane().setBackground(Color.white);
-        setDefaultCloseOperation(Ajuda.HIDE_ON_CLOSE);
         ImageIcon img = new ImageIcon("F:\\desktop\\src\\desktop\\image\\icon.png");
         setIconImage(img.getImage());
     }
@@ -39,21 +38,22 @@ public class Ajuda extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        LabelSenha = new javax.swing.JLabel();
-        LabelUsuario = new javax.swing.JLabel();
-        LabelCriador = new javax.swing.JLabel();
+        LabelIcon = new javax.swing.JLabel();
+        ProgressBar = new javax.swing.JProgressBar();
+        LabelLink = new javax.swing.JLabel();
+        LabelNome = new javax.swing.JLabel();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(300, 300));
         setSize(new java.awt.Dimension(300, 300));
 
-        LabelSenha.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        LabelSenha.setText("Senha padrão: 0");
+        LabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/icon.png"))); // NOI18N
 
-        LabelUsuario.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        LabelUsuario.setText("Usuário padrão: 0");
+        LabelLink.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        LabelLink.setText("https://www.elixirtcc.com");
 
-        LabelCriador.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        LabelCriador.setText("Criador: Okarin");
+        LabelNome.setFont(new java.awt.Font("Monospaced", 0, 36)); // NOI18N
+        LabelNome.setText("Elixir");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -62,20 +62,33 @@ public class Ajuda extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LabelUsuario)
-                    .addComponent(LabelSenha)
-                    .addComponent(LabelCriador))
-                .addContainerGap(203, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(ProgressBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(LabelIcon)
+                        .addGap(122, 122, 122))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(LabelLink)
+                .addGap(0, 65, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(LabelNome)
+                .addGap(130, 130, 130))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LabelUsuario)
+                .addGap(30, 30, 30)
+                .addComponent(LabelIcon)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(LabelNome)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(LabelLink)
                 .addGap(18, 18, 18)
-                .addComponent(LabelSenha)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 285, Short.MAX_VALUE)
-                .addComponent(LabelCriador)
+                .addComponent(ProgressBar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -99,27 +112,28 @@ public class Ajuda extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Ajuda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Carregamento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Ajuda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Carregamento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Ajuda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Carregamento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Ajuda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Carregamento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Ajuda().setVisible(true);
+                new Carregamento().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel LabelCriador;
-    private javax.swing.JLabel LabelSenha;
-    private javax.swing.JLabel LabelUsuario;
+    private javax.swing.JLabel LabelIcon;
+    private javax.swing.JLabel LabelLink;
+    private javax.swing.JLabel LabelNome;
+    private javax.swing.JProgressBar ProgressBar;
     // End of variables declaration//GEN-END:variables
 }

@@ -30,19 +30,9 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="LabelBoasVindas" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                              <Component id="LabelUser" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Component id="ButtonInformacoes" alignment="0" max="32767" attributes="0"/>
                           <Component id="ButtonConfiguracoes" alignment="0" max="32767" attributes="0"/>
@@ -52,6 +42,14 @@
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="LabelIcon" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                      <Component id="LabelBoasVindas" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
+                      <Component id="LabelUser" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -92,7 +90,7 @@
           <Color blue="69" green="3f" red="58" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="13" style="0"/>
+          <Font name="Monospaced" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Minhas linguagens"/>
       </Properties>
@@ -106,7 +104,7 @@
           <Color blue="69" green="3f" red="58" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="13" style="0"/>
+          <Font name="Monospaced" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Configura&#xe7;&#xf5;es da conta"/>
       </Properties>
@@ -120,7 +118,7 @@
           <Color blue="69" green="3f" red="58" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="13" style="0"/>
+          <Font name="Monospaced" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Ir para o site"/>
       </Properties>
@@ -134,7 +132,7 @@
           <Color blue="69" green="3f" red="58" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="13" style="0"/>
+          <Font name="Monospaced" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Sair"/>
       </Properties>
@@ -148,7 +146,7 @@
           <Color blue="69" green="3f" red="58" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monospaced" size="13" style="0"/>
+          <Font name="Monospaced" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Informa&#xe7;&#xf5;es do programa"/>
       </Properties>

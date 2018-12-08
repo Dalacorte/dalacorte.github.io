@@ -47,12 +47,14 @@ public class Java extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
 
+        setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         setMinimumSize(new java.awt.Dimension(300, 300));
         setSize(new java.awt.Dimension(300, 300));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Monospaced", 0, 36)); // NOI18N
         jLabel2.setText("Java");
 
+        jButton1.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         jButton1.setText("Capítulo 1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,6 +62,7 @@ public class Java extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         jButton2.setText("Capítulo 2");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,24 +70,34 @@ public class Java extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         jButton3.setText("Capítulo 3");
 
+        jButton4.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         jButton4.setText("Capítulo 4");
 
+        jButton5.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         jButton5.setText("Capítulo 5");
 
+        jLabel1.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         jLabel1.setText("%");
 
+        jLabel3.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         jLabel3.setText("%");
 
+        jLabel4.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         jLabel4.setText("%");
 
+        jLabel5.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         jLabel5.setText("%");
 
+        jLabel6.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         jLabel6.setText("%");
 
+        jLabel7.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         jLabel7.setText("%");
 
+        jLabel8.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         jLabel8.setText("Progresso Geral:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -94,16 +107,15 @@ public class Java extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4)
-                    .addComponent(jButton5)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
                     .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton1)
+                            .addComponent(jButton2)
+                            .addComponent(jButton3)
+                            .addComponent(jButton4)
+                            .addComponent(jButton5)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -118,15 +130,16 @@ public class Java extends javax.swing.JFrame {
                             .addComponent(jLabel6)
                             .addComponent(jLabel7)
                             .addComponent(jLabel5)
-                            .addComponent(jLabel4))))
-                .addContainerGap(24, Short.MAX_VALUE))
+                            .addComponent(jLabel4)))
+                    .addComponent(jLabel2))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(27, 27, 27)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21)
+                .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel7)
                     .addGroup(layout.createSequentialGroup()
@@ -164,7 +177,7 @@ public class Java extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel8)
                             .addComponent(jProgressBar6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
 
         pack();
