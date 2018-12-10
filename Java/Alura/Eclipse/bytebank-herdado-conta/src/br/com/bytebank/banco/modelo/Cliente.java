@@ -1,5 +1,7 @@
 package br.com.bytebank.banco.modelo;
 
+import java.io.Serializable;
+
 /**
 * Classe que representa um cliente no Bytebank.
 *
@@ -8,6 +10,7 @@ package br.com.bytebank.banco.modelo;
 */
 
 public class Cliente { // classe cliente
+	
 	private String nome; // atributo
 	private String cpf; // atributo
 	private String profissao; // atributo
