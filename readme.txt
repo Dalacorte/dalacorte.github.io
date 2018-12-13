@@ -17,7 +17,7 @@ see you space cowboy
 10 x
 11 x
 12 x
-13
+13 x
 14
 15
 16
