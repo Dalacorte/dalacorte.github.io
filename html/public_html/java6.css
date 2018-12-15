@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+*{
+	border:0;font-size:100%;font-family: 'Lato', sans-serif;;vertical-align:baseline;margin:0;padding:0;
+}
+
+.hero-image {
+	top: -20rem;
+	bottom: -20rem;
+	width: 100%;
+	background-image: url(7.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	z-index: 1;
+}
+
+.hero h1 {
+	position: relative;
+	text-align: center;
+	color: white;
+	padding-top: 20rem;
+	z-index: 2;
+}
+
+.navbar-wrapper {
+	height: 3rem;
+}
+nav.pinned {
+	position: fixed;
+	top: 0;
+	background-color: #f5f5f5;
+	transition: 0.2s ease background-color;
+	-webkit-transition: 0.2s ease background-color;
+
+}
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+
+/* Default header styles */
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: -0.00933333em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #222222;
+	line-height: 1.4; }
+h1 {
+	font-size: 2.75rem;
+text-transform: uppercase;
+  letter-spacing: 0.2405em;
+  transition: all 770ms cubic-bezier(0.51, 0.04, 0.12, 0.99);	}
+h2 {
+	font-size: 1.6875rem; }
+h3 {
+	font-size: 1.375rem; }
+h4 {
+	font-size: 1.125rem; }
+h5 {
+	font-size: 1.125rem; }
+h6 {
+	font-size: 1rem; }
+
+/* Base element styles */
+body, html {
+	width: 100%;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	color: #222222; }
+
+a, a:hover {
+	color: inherit;
+	text-decoration: none; }
+
+ul {
+	margin: 2rem 0;
+	list-style: disc;
+	padding-left: 2rem; }
+ul li {
+	padding: 0.5rem 0; }
+
+p {
+	margin: 1rem 0;
+	line-height: 1.8; }
+
+.content {
+	max-width: 60rem;
+	margin: 0 auto;
+	width: 100%; }
+
+.hero {
+	position: relative;
+	overflow: hidden;
+	height: 30rem; }
+
+section { padding: 6rem 0 3rem; }
+
+footer {
+	margin-top: 4em;
+	padding: 2em;
+	background-color: #222;
+	color: white;
+	text-align: center; }
+footer p {
+	margin: 0; }
+
+/* Navbar Styles */
+
+nav {
+	height: 3rem;
+	position: relative;
+	width: 100%; }
+nav ul {
+	height: 3rem;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	font-size: 0;
+	list-style: none; }
+nav ul li {
+	font-size: 1rem;
+	padding: 0;
+	display: inline-block;}
+nav ul li p {
+	height: 1.5rem;
+	line-height: 1.5rem;
+	margin: 0;
+	padding: 0.75rem 1.5rem; }
+nav ul li:hover {
+	cursor: pointer;
+	background-color: #eee; }
+nav ul li.action-item {
+	color: white;
+	background-color: #72706f; }
+nav ul li.action-item:hover {
+	color: white;
+	background-color: #; }
+nav ul.right { float:right; }
