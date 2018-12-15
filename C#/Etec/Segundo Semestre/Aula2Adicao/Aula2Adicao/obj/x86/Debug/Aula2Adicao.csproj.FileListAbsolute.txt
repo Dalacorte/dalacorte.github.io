@@ -1,4 +1,0 @@
-C:\Users\LAB\Desktop\Aula2Adicao\Aula2Adicao\bin\Debug\Aula2Adicao.exe
-C:\Users\LAB\Desktop\Aula2Adicao\Aula2Adicao\bin\Debug\Aula2Adicao.pdb
-C:\Users\LAB\Desktop\Aula2Adicao\Aula2Adicao\obj\x86\Debug\Aula2Adicao.exe
-C:\Users\LAB\Desktop\Aula2Adicao\Aula2Adicao\obj\x86\Debug\Aula2Adicao.pdb

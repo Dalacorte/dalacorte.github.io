@@ -1,4 +1,0 @@
-C:\Users\LAB\Desktop\Aula2Desafio\Aula2Desafio\bin\Debug\Aula2Desafio.exe
-C:\Users\LAB\Desktop\Aula2Desafio\Aula2Desafio\bin\Debug\Aula2Desafio.pdb
-C:\Users\LAB\Desktop\Aula2Desafio\Aula2Desafio\obj\x86\Debug\Aula2Desafio.exe
-C:\Users\LAB\Desktop\Aula2Desafio\Aula2Desafio\obj\x86\Debug\Aula2Desafio.pdb

@@ -1,8 +1,0 @@
-C:\Users\LAB\Desktop\Aula8Loop\Aula8Loop\bin\Debug\Aula8Loop.exe
-C:\Users\LAB\Desktop\Aula8Loop\Aula8Loop\bin\Debug\Aula8Loop.pdb
-C:\Users\LAB\Desktop\Aula8Loop\Aula8Loop\obj\x86\Debug\Aula8Loop.Form1.resources
-C:\Users\LAB\Desktop\Aula8Loop\Aula8Loop\obj\x86\Debug\Aula8Loop.Properties.Resources.resources
-C:\Users\LAB\Desktop\Aula8Loop\Aula8Loop\obj\x86\Debug\Aula8Loop.csproj.GenerateResource.Cache
-C:\Users\LAB\Desktop\Aula8Loop\Aula8Loop\obj\x86\Debug\Aula8Loop.exe
-C:\Users\LAB\Desktop\Aula8Loop\Aula8Loop\obj\x86\Debug\Aula8Loop.pdb
-C:\Users\LAB\Desktop\Aula8Loop\Aula8Loop\obj\x86\Debug\Aula8Loop.csprojResolveAssemblyReference.cache

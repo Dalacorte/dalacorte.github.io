@@ -1,4 +1,0 @@
-C:\Users\LAB\Desktop\Aula2Ola\Aula2Ola\bin\Debug\Aula2Ola.exe
-C:\Users\LAB\Desktop\Aula2Ola\Aula2Ola\bin\Debug\Aula2Ola.pdb
-C:\Users\LAB\Desktop\Aula2Ola\Aula2Ola\obj\x86\Debug\Aula2Ola.exe
-C:\Users\LAB\Desktop\Aula2Ola\Aula2Ola\obj\x86\Debug\Aula2Ola.pdb

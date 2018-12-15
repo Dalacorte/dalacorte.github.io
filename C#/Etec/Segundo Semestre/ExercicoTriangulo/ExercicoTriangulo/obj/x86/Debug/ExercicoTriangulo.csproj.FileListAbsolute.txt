@@ -1,7 +1,0 @@
-C:\Users\LAB\Desktop\ExercicoTriangulo\ExercicoTriangulo\bin\Debug\ExercicoTriangulo.exe
-C:\Users\LAB\Desktop\ExercicoTriangulo\ExercicoTriangulo\bin\Debug\ExercicoTriangulo.pdb
-C:\Users\LAB\Desktop\ExercicoTriangulo\ExercicoTriangulo\obj\x86\Debug\ExercicoTriangulo.Triangulo.resources
-C:\Users\LAB\Desktop\ExercicoTriangulo\ExercicoTriangulo\obj\x86\Debug\ExercicoTriangulo.Properties.Resources.resources
-C:\Users\LAB\Desktop\ExercicoTriangulo\ExercicoTriangulo\obj\x86\Debug\ExercicoTriangulo.csproj.GenerateResource.Cache
-C:\Users\LAB\Desktop\ExercicoTriangulo\ExercicoTriangulo\obj\x86\Debug\ExercicoTriangulo.exe
-C:\Users\LAB\Desktop\ExercicoTriangulo\ExercicoTriangulo\obj\x86\Debug\ExercicoTriangulo.pdb

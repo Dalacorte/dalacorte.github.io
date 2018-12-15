@@ -1,7 +1,0 @@
-N:\(ETECIA2018)\2ºSem\Aula8_Clique\Aula8_Clique\bin\Debug\Aula8_Clique.exe
-N:\(ETECIA2018)\2ºSem\Aula8_Clique\Aula8_Clique\bin\Debug\Aula8_Clique.pdb
-N:\(ETECIA2018)\2ºSem\Aula8_Clique\Aula8_Clique\obj\x86\Debug\Aula8_Clique.Form1.resources
-N:\(ETECIA2018)\2ºSem\Aula8_Clique\Aula8_Clique\obj\x86\Debug\Aula8_Clique.Properties.Resources.resources
-N:\(ETECIA2018)\2ºSem\Aula8_Clique\Aula8_Clique\obj\x86\Debug\Aula8_Clique.csproj.GenerateResource.Cache
-N:\(ETECIA2018)\2ºSem\Aula8_Clique\Aula8_Clique\obj\x86\Debug\Aula8_Clique.exe
-N:\(ETECIA2018)\2ºSem\Aula8_Clique\Aula8_Clique\obj\x86\Debug\Aula8_Clique.pdb

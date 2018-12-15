@@ -1,7 +1,0 @@
-c:\users\lab\documents\visual studio 2010\Projects\Aula09_Metodos\Aula09_Metodos\bin\Debug\Aula09_Metodos.exe
-c:\users\lab\documents\visual studio 2010\Projects\Aula09_Metodos\Aula09_Metodos\bin\Debug\Aula09_Metodos.pdb
-c:\users\lab\documents\visual studio 2010\Projects\Aula09_Metodos\Aula09_Metodos\obj\x86\Debug\Aula09_Metodos.Form1.resources
-c:\users\lab\documents\visual studio 2010\Projects\Aula09_Metodos\Aula09_Metodos\obj\x86\Debug\Aula09_Metodos.Properties.Resources.resources
-c:\users\lab\documents\visual studio 2010\Projects\Aula09_Metodos\Aula09_Metodos\obj\x86\Debug\Aula09_Metodos.csproj.GenerateResource.Cache
-c:\users\lab\documents\visual studio 2010\Projects\Aula09_Metodos\Aula09_Metodos\obj\x86\Debug\Aula09_Metodos.exe
-c:\users\lab\documents\visual studio 2010\Projects\Aula09_Metodos\Aula09_Metodos\obj\x86\Debug\Aula09_Metodos.pdb

@@ -1,7 +1,0 @@
-c:\users\lab\documents\visual studio 2010\Projects\Aula6_Valores\Aula6_Valores\bin\Debug\Aula6_Valores.exe
-c:\users\lab\documents\visual studio 2010\Projects\Aula6_Valores\Aula6_Valores\bin\Debug\Aula6_Valores.pdb
-c:\users\lab\documents\visual studio 2010\Projects\Aula6_Valores\Aula6_Valores\obj\x86\Debug\Aula6_Valores.Form1.resources
-c:\users\lab\documents\visual studio 2010\Projects\Aula6_Valores\Aula6_Valores\obj\x86\Debug\Aula6_Valores.Properties.Resources.resources
-c:\users\lab\documents\visual studio 2010\Projects\Aula6_Valores\Aula6_Valores\obj\x86\Debug\Aula6_Valores.csproj.GenerateResource.Cache
-c:\users\lab\documents\visual studio 2010\Projects\Aula6_Valores\Aula6_Valores\obj\x86\Debug\Aula6_Valores.exe
-c:\users\lab\documents\visual studio 2010\Projects\Aula6_Valores\Aula6_Valores\obj\x86\Debug\Aula6_Valores.pdb

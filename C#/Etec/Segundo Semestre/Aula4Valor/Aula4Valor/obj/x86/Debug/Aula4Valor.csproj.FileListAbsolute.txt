@@ -1,9 +1,0 @@
-C:\Users\LAB\Desktop\Aula4Valor\Aula4Valor\bin\Debug\Aula4Valor.exe
-C:\Users\LAB\Desktop\Aula4Valor\Aula4Valor\bin\Debug\Aula4Valor.pdb
-C:\Users\LAB\Desktop\Aula4Valor\Aula4Valor\obj\x86\Debug\Aula4Valor.Form1.resources
-C:\Users\LAB\Desktop\Aula4Valor\Aula4Valor\obj\x86\Debug\Aula4Valor.Properties.Resources.resources
-C:\Users\LAB\Desktop\Aula4Valor\Aula4Valor\obj\x86\Debug\Aula4Valor.csproj.GenerateResource.Cache
-C:\Users\LAB\Desktop\Aula4Valor\Aula4Valor\obj\x86\Debug\Aula4Valor.exe
-C:\Users\LAB\Desktop\Aula4Valor\Aula4Valor\obj\x86\Debug\Aula4Valor.pdb
-F:\ETEC\2 Modulo\DS I\Aula4Valor\Aula4Valor\obj\x86\Debug\Aula4Valor.exe
-F:\ETEC\2 Modulo\DS I\Aula4Valor\Aula4Valor\obj\x86\Debug\Aula4Valor.pdb

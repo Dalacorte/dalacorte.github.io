@@ -1,9 +1,0 @@
-C:\Users\LAB\Desktop\Aula4Media\Aula4Media\bin\Debug\Aula4Media.exe
-C:\Users\LAB\Desktop\Aula4Media\Aula4Media\bin\Debug\Aula4Media.pdb
-C:\Users\LAB\Desktop\Aula4Media\Aula4Media\obj\x86\Debug\Aula4Media.Form1.resources
-C:\Users\LAB\Desktop\Aula4Media\Aula4Media\obj\x86\Debug\Aula4Media.Properties.Resources.resources
-C:\Users\LAB\Desktop\Aula4Media\Aula4Media\obj\x86\Debug\Aula4Media.csproj.GenerateResource.Cache
-C:\Users\LAB\Desktop\Aula4Media\Aula4Media\obj\x86\Debug\Aula4Media.exe
-C:\Users\LAB\Desktop\Aula4Media\Aula4Media\obj\x86\Debug\Aula4Media.pdb
-F:\ETEC\2 Modulo\DS I\Aula4Media\Aula4Media\obj\x86\Debug\Aula4Media.exe
-F:\ETEC\2 Modulo\DS I\Aula4Media\Aula4Media\obj\x86\Debug\Aula4Media.pdb

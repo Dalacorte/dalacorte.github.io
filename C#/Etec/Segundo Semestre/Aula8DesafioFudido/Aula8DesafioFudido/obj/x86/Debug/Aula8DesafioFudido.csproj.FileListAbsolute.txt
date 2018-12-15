@@ -1,7 +1,0 @@
-C:\Users\LAB\Desktop\Aula8DesafioFudido\Aula8DesafioFudido\obj\x86\Debug\Aula8DesafioFudido.Form1.resources
-C:\Users\LAB\Desktop\Aula8DesafioFudido\Aula8DesafioFudido\obj\x86\Debug\Aula8DesafioFudido.Properties.Resources.resources
-C:\Users\LAB\Desktop\Aula8DesafioFudido\Aula8DesafioFudido\obj\x86\Debug\Aula8DesafioFudido.csproj.GenerateResource.Cache
-C:\Users\LAB\Desktop\Aula8DesafioFudido\Aula8DesafioFudido\bin\Debug\Aula8DesafioFudido.exe
-C:\Users\LAB\Desktop\Aula8DesafioFudido\Aula8DesafioFudido\bin\Debug\Aula8DesafioFudido.pdb
-C:\Users\LAB\Desktop\Aula8DesafioFudido\Aula8DesafioFudido\obj\x86\Debug\Aula8DesafioFudido.exe
-C:\Users\LAB\Desktop\Aula8DesafioFudido\Aula8DesafioFudido\obj\x86\Debug\Aula8DesafioFudido.pdb

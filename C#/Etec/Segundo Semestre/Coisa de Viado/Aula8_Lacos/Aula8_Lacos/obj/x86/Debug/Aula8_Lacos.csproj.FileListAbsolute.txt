@@ -1,8 +1,0 @@
-N:\(ETECIA2018)\2ºSem\Aula8_Lacos\Aula8_Lacos\bin\Debug\Aula8_Lacos.exe
-N:\(ETECIA2018)\2ºSem\Aula8_Lacos\Aula8_Lacos\bin\Debug\Aula8_Lacos.pdb
-N:\(ETECIA2018)\2ºSem\Aula8_Lacos\Aula8_Lacos\obj\x86\Debug\Aula8_Lacos.Form1.resources
-N:\(ETECIA2018)\2ºSem\Aula8_Lacos\Aula8_Lacos\obj\x86\Debug\Aula8_Lacos.Properties.Resources.resources
-N:\(ETECIA2018)\2ºSem\Aula8_Lacos\Aula8_Lacos\obj\x86\Debug\Aula8_Lacos.csproj.GenerateResource.Cache
-N:\(ETECIA2018)\2ºSem\Aula8_Lacos\Aula8_Lacos\obj\x86\Debug\Aula8_Lacos.exe
-N:\(ETECIA2018)\2ºSem\Aula8_Lacos\Aula8_Lacos\obj\x86\Debug\Aula8_Lacos.pdb
-N:\(ETECIA2018)\2ºSem\Aula8_Lacos\Aula8_Lacos\obj\x86\Debug\Aula8_Lacos.csprojResolveAssemblyReference.cache

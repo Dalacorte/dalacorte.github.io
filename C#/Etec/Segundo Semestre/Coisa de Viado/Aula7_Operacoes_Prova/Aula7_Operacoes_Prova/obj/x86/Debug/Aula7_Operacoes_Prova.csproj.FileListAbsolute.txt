@@ -1,7 +1,0 @@
-N:\(ETECIA2018)\2ºSem\Aula7_Operacoes_Prova\Aula7_Operacoes_Prova\bin\Debug\Aula7_Operacoes_Prova.exe
-N:\(ETECIA2018)\2ºSem\Aula7_Operacoes_Prova\Aula7_Operacoes_Prova\bin\Debug\Aula7_Operacoes_Prova.pdb
-N:\(ETECIA2018)\2ºSem\Aula7_Operacoes_Prova\Aula7_Operacoes_Prova\obj\x86\Debug\Aula7_Operacoes_Prova.Form1.resources
-N:\(ETECIA2018)\2ºSem\Aula7_Operacoes_Prova\Aula7_Operacoes_Prova\obj\x86\Debug\Aula7_Operacoes_Prova.Properties.Resources.resources
-N:\(ETECIA2018)\2ºSem\Aula7_Operacoes_Prova\Aula7_Operacoes_Prova\obj\x86\Debug\Aula7_Operacoes_Prova.csproj.GenerateResource.Cache
-N:\(ETECIA2018)\2ºSem\Aula7_Operacoes_Prova\Aula7_Operacoes_Prova\obj\x86\Debug\Aula7_Operacoes_Prova.exe
-N:\(ETECIA2018)\2ºSem\Aula7_Operacoes_Prova\Aula7_Operacoes_Prova\obj\x86\Debug\Aula7_Operacoes_Prova.pdb

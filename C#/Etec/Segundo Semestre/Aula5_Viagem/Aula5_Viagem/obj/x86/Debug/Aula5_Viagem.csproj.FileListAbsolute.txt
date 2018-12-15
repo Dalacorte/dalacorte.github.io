@@ -1,7 +1,0 @@
-c:\users\lab\documents\visual studio 2010\Projects\Aula5_Viagem\Aula5_Viagem\bin\Debug\Aula5_Viagem.exe
-c:\users\lab\documents\visual studio 2010\Projects\Aula5_Viagem\Aula5_Viagem\bin\Debug\Aula5_Viagem.pdb
-c:\users\lab\documents\visual studio 2010\Projects\Aula5_Viagem\Aula5_Viagem\obj\x86\Debug\Aula5_Viagem.FrmViagem.resources
-c:\users\lab\documents\visual studio 2010\Projects\Aula5_Viagem\Aula5_Viagem\obj\x86\Debug\Aula5_Viagem.Properties.Resources.resources
-c:\users\lab\documents\visual studio 2010\Projects\Aula5_Viagem\Aula5_Viagem\obj\x86\Debug\Aula5_Viagem.csproj.GenerateResource.Cache
-c:\users\lab\documents\visual studio 2010\Projects\Aula5_Viagem\Aula5_Viagem\obj\x86\Debug\Aula5_Viagem.exe
-c:\users\lab\documents\visual studio 2010\Projects\Aula5_Viagem\Aula5_Viagem\obj\x86\Debug\Aula5_Viagem.pdb

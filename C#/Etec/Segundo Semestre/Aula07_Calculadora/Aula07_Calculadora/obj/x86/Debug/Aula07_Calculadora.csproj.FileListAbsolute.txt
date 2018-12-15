@@ -1,9 +1,0 @@
-C:\Users\LAB\Desktop\Aula07_Calculadora\Aula07_Calculadora\bin\Debug\Aula07_Calculadora.exe
-C:\Users\LAB\Desktop\Aula07_Calculadora\Aula07_Calculadora\bin\Debug\Aula07_Calculadora.pdb
-C:\Users\LAB\Desktop\Aula07_Calculadora\Aula07_Calculadora\obj\x86\Debug\Aula07_Calculadora.Form1.resources
-C:\Users\LAB\Desktop\Aula07_Calculadora\Aula07_Calculadora\obj\x86\Debug\Aula07_Calculadora.Properties.Resources.resources
-C:\Users\LAB\Desktop\Aula07_Calculadora\Aula07_Calculadora\obj\x86\Debug\Aula07_Calculadora.csproj.GenerateResource.Cache
-C:\Users\LAB\Desktop\Aula07_Calculadora\Aula07_Calculadora\obj\x86\Debug\Aula07_Calculadora.exe
-C:\Users\LAB\Desktop\Aula07_Calculadora\Aula07_Calculadora\obj\x86\Debug\Aula07_Calculadora.pdb
-F:\V - Etec\Segundo Semestre\DS I\Aula07_Calculadora\Aula07_Calculadora\obj\x86\Debug\Aula07_Calculadora.exe
-F:\V - Etec\Segundo Semestre\DS I\Aula07_Calculadora\Aula07_Calculadora\obj\x86\Debug\Aula07_Calculadora.pdb

@@ -1,7 +1,0 @@
-C:\Users\LAB\Desktop\Aula2WindowsForm\Aula2WindowsForm\obj\x86\Debug\Aula2WindowsForm.Aula.resources
-C:\Users\LAB\Desktop\Aula2WindowsForm\Aula2WindowsForm\obj\x86\Debug\Aula2WindowsForm.Properties.Resources.resources
-C:\Users\LAB\Desktop\Aula2WindowsForm\Aula2WindowsForm\obj\x86\Debug\Aula2WindowsForm.csproj.GenerateResource.Cache
-C:\Users\LAB\Desktop\Aula2WindowsForm\Aula2WindowsForm\bin\Debug\Aula2WindowsForm.exe
-C:\Users\LAB\Desktop\Aula2WindowsForm\Aula2WindowsForm\bin\Debug\Aula2WindowsForm.pdb
-C:\Users\LAB\Desktop\Aula2WindowsForm\Aula2WindowsForm\obj\x86\Debug\Aula2WindowsForm.exe
-C:\Users\LAB\Desktop\Aula2WindowsForm\Aula2WindowsForm\obj\x86\Debug\Aula2WindowsForm.pdb

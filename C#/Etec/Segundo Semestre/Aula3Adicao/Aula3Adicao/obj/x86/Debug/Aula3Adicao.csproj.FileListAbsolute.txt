@@ -1,9 +1,0 @@
-C:\Users\LAB\Desktop\Aula3Adicao\Aula3Adicao\bin\Debug\Aula3Adicao.exe
-C:\Users\LAB\Desktop\Aula3Adicao\Aula3Adicao\bin\Debug\Aula3Adicao.pdb
-C:\Users\LAB\Desktop\Aula3Adicao\Aula3Adicao\obj\x86\Debug\Aula3Adicao.Form1.resources
-C:\Users\LAB\Desktop\Aula3Adicao\Aula3Adicao\obj\x86\Debug\Aula3Adicao.Properties.Resources.resources
-C:\Users\LAB\Desktop\Aula3Adicao\Aula3Adicao\obj\x86\Debug\Aula3Adicao.csproj.GenerateResource.Cache
-C:\Users\LAB\Desktop\Aula3Adicao\Aula3Adicao\obj\x86\Debug\Aula3Adicao.exe
-C:\Users\LAB\Desktop\Aula3Adicao\Aula3Adicao\obj\x86\Debug\Aula3Adicao.pdb
-F:\ETEC\2 Modulo\DS I\Aula3Adicao\Aula3Adicao\obj\x86\Debug\Aula3Adicao.exe
-F:\ETEC\2 Modulo\DS I\Aula3Adicao\Aula3Adicao\obj\x86\Debug\Aula3Adicao.pdb

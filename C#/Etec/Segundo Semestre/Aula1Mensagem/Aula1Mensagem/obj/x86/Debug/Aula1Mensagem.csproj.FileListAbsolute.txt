@@ -1,4 +1,0 @@
-C:\Users\LAB\Desktop\Aula1Mensagem\Aula1Mensagem\bin\Debug\Aula1Mensagem.exe
-C:\Users\LAB\Desktop\Aula1Mensagem\Aula1Mensagem\bin\Debug\Aula1Mensagem.pdb
-C:\Users\LAB\Desktop\Aula1Mensagem\Aula1Mensagem\obj\x86\Debug\Aula1Mensagem.exe
-C:\Users\LAB\Desktop\Aula1Mensagem\Aula1Mensagem\obj\x86\Debug\Aula1Mensagem.pdb
