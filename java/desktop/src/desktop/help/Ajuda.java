@@ -7,6 +7,10 @@ package desktop.help;
 
 import desktop.login.Entrar;
 import java.awt.Color;
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import javax.swing.ImageIcon;
 
 /**
@@ -19,15 +23,13 @@ public class Ajuda extends javax.swing.JFrame {
      * Creates new form Ajuda
      */
     public Ajuda() {
+        setUndecorated(true);
         initComponents();
-        setSize(400, 400);
+        setSize(500, 300);
         setLocationRelativeTo(null);
         setTitle("Ajuda");
         setResizable(false);
-        getContentPane().setBackground(Color.white);
         setDefaultCloseOperation(Ajuda.HIDE_ON_CLOSE);
-        ImageIcon img = new ImageIcon("F:\\desktop\\src\\desktop\\image\\icon.png");
-        setIconImage(img.getImage());
     }
 
     /**
@@ -39,48 +41,149 @@ public class Ajuda extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        LabelSenha = new javax.swing.JLabel();
+        PanelAjuda = new javax.swing.JPanel();
         LabelUsuario = new javax.swing.JLabel();
         LabelCriador = new javax.swing.JLabel();
+        LabelSenha = new javax.swing.JLabel();
+        LabelTexto = new javax.swing.JLabel();
+        LabelTexto2 = new javax.swing.JLabel();
+        LabelTexto3 = new javax.swing.JLabel();
+        LabelSite = new javax.swing.JLabel();
+        LabelSair = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(300, 300));
         setSize(new java.awt.Dimension(300, 300));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        LabelSenha.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        LabelSenha.setText("Senha padrão: 0");
+        PanelAjuda.setBackground(new java.awt.Color(255, 255, 255));
+        PanelAjuda.setForeground(new java.awt.Color(103, 79, 117));
 
         LabelUsuario.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        LabelUsuario.setForeground(new java.awt.Color(103, 79, 117));
+        LabelUsuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelUsuario.setText("Usuário padrão: 0");
 
         LabelCriador.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        LabelCriador.setText("Criador: Okarin");
+        LabelCriador.setForeground(new java.awt.Color(103, 79, 117));
+        LabelCriador.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelCriador.setText("Criador: Okarin e Julio");
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LabelUsuario)
-                    .addComponent(LabelSenha)
-                    .addComponent(LabelCriador))
-                .addContainerGap(203, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LabelUsuario)
-                .addGap(18, 18, 18)
-                .addComponent(LabelSenha)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 285, Short.MAX_VALUE)
-                .addComponent(LabelCriador)
+        LabelSenha.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        LabelSenha.setForeground(new java.awt.Color(103, 79, 117));
+        LabelSenha.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelSenha.setText("Senha padrão: 0");
+
+        LabelTexto.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        LabelTexto.setForeground(new java.awt.Color(103, 79, 117));
+        LabelTexto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelTexto.setText("Você não pode criar uma conta nesta versão");
+
+        LabelTexto2.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        LabelTexto2.setForeground(new java.awt.Color(103, 79, 117));
+        LabelTexto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelTexto2.setText("para tal, voce precisa se registrar na");
+
+        LabelTexto3.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        LabelTexto3.setForeground(new java.awt.Color(103, 79, 117));
+        LabelTexto3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelTexto3.setText("versão web deste mesmo projeto");
+
+        LabelSite.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        LabelSite.setForeground(new java.awt.Color(103, 79, 117));
+        LabelSite.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelSite.setText("elixitcc.000webhostapp.com");
+        LabelSite.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelSiteMouseClicked(evt);
+            }
+        });
+
+        LabelSair.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        LabelSair.setForeground(new java.awt.Color(103, 79, 117));
+        LabelSair.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelSair.setText("X");
+        LabelSair.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelSairMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PanelAjudaLayout = new javax.swing.GroupLayout(PanelAjuda);
+        PanelAjuda.setLayout(PanelAjudaLayout);
+        PanelAjudaLayout.setHorizontalGroup(
+            PanelAjudaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelAjudaLayout.createSequentialGroup()
+                .addGroup(PanelAjudaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(LabelTexto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelAjudaLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(LabelUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(LabelSair, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelTexto3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(LabelCriador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelAjudaLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(PanelAjudaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(LabelSite, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LabelSenha, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LabelTexto, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
         );
+        PanelAjudaLayout.setVerticalGroup(
+            PanelAjudaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelAjudaLayout.createSequentialGroup()
+                .addGroup(PanelAjudaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelSair, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LabelUsuario))
+                .addGap(1, 1, 1)
+                .addComponent(LabelSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(LabelTexto)
+                .addGap(4, 4, 4)
+                .addComponent(LabelTexto2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(LabelTexto3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(LabelSite, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(LabelCriador, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(PanelAjuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void LabelSiteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelSiteMouseClicked
+        // TODO add your handling code here:
+        String url = "http://elixirtcc.000webhostapp.com/registrar";
+
+        if (Desktop.isDesktopSupported()) {
+            Desktop desktop = Desktop.getDesktop();
+            try {
+                desktop.browse(new URI(url));
+            } catch (IOException | URISyntaxException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        } else {
+            Runtime runtime = Runtime.getRuntime();
+            try {
+                runtime.exec("xdg-open " + url);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }//GEN-LAST:event_LabelSiteMouseClicked
+
+    private void LabelSairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelSairMouseClicked
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_LabelSairMouseClicked
 
     /**
      * @param args the command line arguments
@@ -119,7 +222,13 @@ public class Ajuda extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel LabelCriador;
+    private javax.swing.JLabel LabelSair;
     private javax.swing.JLabel LabelSenha;
+    private javax.swing.JLabel LabelSite;
+    private javax.swing.JLabel LabelTexto;
+    private javax.swing.JLabel LabelTexto2;
+    private javax.swing.JLabel LabelTexto3;
     private javax.swing.JLabel LabelUsuario;
+    private javax.swing.JPanel PanelAjuda;
     // End of variables declaration//GEN-END:variables
 }

@@ -8,6 +8,10 @@ package desktop.main;
 import desktop.java.Java;
 import desktop.login.Entrar;
 import java.awt.Color;
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import javax.swing.ImageIcon;
 
 /**
@@ -20,16 +24,13 @@ public class Inicio extends javax.swing.JFrame {
      * Creates new form Inicio
      */
     public Inicio() {
+        setUndecorated(true);
         initComponents();
-        setSize(465, 400);
+        setSize(1000, 600);
         setLocationRelativeTo(null);
         setTitle("Inicio");
         setResizable(false);
-        getContentPane().setBackground(Color.white);
-        setDefaultCloseOperation(Inicio.HIDE_ON_CLOSE);
-        ImageIcon img = new ImageIcon("F:\\desktop\\src\\desktop\\image\\icon.png");
-        setIconImage(img.getImage());
-        ButtonConfiguracoes.setEnabled(false);
+        setDefaultCloseOperation(Inicio.EXIT_ON_CLOSE);
     }
 
     /**
@@ -41,145 +42,201 @@ public class Inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        ButtonLinguagens = new javax.swing.JButton();
-        ButtonConfiguracoes = new javax.swing.JButton();
-        ButtonSite = new javax.swing.JButton();
-        ButtonSair = new javax.swing.JButton();
-        ButtonInformacoes = new javax.swing.JButton();
-        LabelIcon = new javax.swing.JLabel();
-        LabelBoasVindas = new javax.swing.JLabel();
         LabelUser = new javax.swing.JLabel();
+        LabelBoasVindas = new javax.swing.JLabel();
+        LabelMinhasLinguagens = new javax.swing.JLabel();
+        LabelInformacoesDoPrograma = new javax.swing.JLabel();
+        LabelSair = new javax.swing.JLabel();
+        LabelConfiguracoesDaConta = new javax.swing.JLabel();
+        LabelIrParaOSite = new javax.swing.JLabel();
+        LabelImagemEsquerda = new javax.swing.JLabel();
+        PanelInicio = new javax.swing.JPanel();
+        LabelIcon = new javax.swing.JLabel();
+        LabelPython = new javax.swing.JLabel();
+        LabelAndroid = new javax.swing.JLabel();
+        LabelJava = new javax.swing.JLabel();
+        LabelSQL = new javax.swing.JLabel();
+        LabelFechar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(300, 300));
         setSize(new java.awt.Dimension(300, 300));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        ButtonLinguagens.setBackground(new java.awt.Color(88, 63, 105));
-        ButtonLinguagens.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        ButtonLinguagens.setText("Minhas linguagens");
-        ButtonLinguagens.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonLinguagensActionPerformed(evt);
+        LabelUser.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelUser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/duke-user.png"))); // NOI18N
+        getContentPane().add(LabelUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 120));
+
+        LabelBoasVindas.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        LabelBoasVindas.setForeground(new java.awt.Color(255, 255, 255));
+        LabelBoasVindas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelBoasVindas.setText("Bem-vindo, Okarin");
+        getContentPane().add(LabelBoasVindas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 380, 50));
+
+        LabelMinhasLinguagens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/minhas-linguagens.png"))); // NOI18N
+        getContentPane().add(LabelMinhasLinguagens, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
+
+        LabelInformacoesDoPrograma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/informacoes-do-programa.png"))); // NOI18N
+        getContentPane().add(LabelInformacoesDoPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, -1, -1));
+
+        LabelSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/sair.png"))); // NOI18N
+        LabelSair.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelSairMouseClicked(evt);
             }
         });
+        getContentPane().add(LabelSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, -1, -1));
 
-        ButtonConfiguracoes.setBackground(new java.awt.Color(88, 63, 105));
-        ButtonConfiguracoes.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        ButtonConfiguracoes.setText("Configurações da conta");
-        ButtonConfiguracoes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonConfiguracoesActionPerformed(evt);
+        LabelConfiguracoesDaConta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/configuracoes-da-conta.png"))); // NOI18N
+        getContentPane().add(LabelConfiguracoesDaConta, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
+
+        LabelIrParaOSite.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/ir-para-o-site.png"))); // NOI18N
+        LabelIrParaOSite.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelIrParaOSiteMouseClicked(evt);
             }
         });
+        getContentPane().add(LabelIrParaOSite, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, -1, -1));
 
-        ButtonSite.setBackground(new java.awt.Color(88, 63, 105));
-        ButtonSite.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        ButtonSite.setText("Ir para o site");
-        ButtonSite.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonSiteActionPerformed(evt);
+        LabelImagemEsquerda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/fundo.jpg"))); // NOI18N
+        LabelImagemEsquerda.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                LabelImagemEsquerdaMouseDragged(evt);
             }
         });
-
-        ButtonSair.setBackground(new java.awt.Color(88, 63, 105));
-        ButtonSair.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        ButtonSair.setText("Sair");
-        ButtonSair.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonSairActionPerformed(evt);
+        LabelImagemEsquerda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                LabelImagemEsquerdaMousePressed(evt);
             }
         });
+        getContentPane().add(LabelImagemEsquerda, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 600));
 
-        ButtonInformacoes.setBackground(new java.awt.Color(88, 63, 105));
-        ButtonInformacoes.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        ButtonInformacoes.setText("Informações do programa");
-        ButtonInformacoes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonInformacoesActionPerformed(evt);
-            }
-        });
+        PanelInicio.setBackground(new java.awt.Color(255, 255, 255));
 
+        LabelIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/icon.png"))); // NOI18N
 
-        LabelBoasVindas.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        LabelBoasVindas.setText("Bem-vindo, Okarin");
+        LabelPython.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelPython.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/python.png"))); // NOI18N
 
-        LabelUser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/user.png"))); // NOI18N
+        LabelAndroid.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelAndroid.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/android.png"))); // NOI18N
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(ButtonInformacoes, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ButtonConfiguracoes, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ButtonSair, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ButtonSite, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ButtonLinguagens, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(LabelIcon))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(51, 51, 51)
-                        .addComponent(LabelBoasVindas))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(118, 118, 118)
-                        .addComponent(LabelUser)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
-                .addComponent(LabelUser)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(LabelBoasVindas)
+        LabelJava.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelJava.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/java.png"))); // NOI18N
+        LabelJava.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelJavaMouseClicked(evt);
+            }
+        });
+
+        LabelSQL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelSQL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/sql.png"))); // NOI18N
+
+        LabelFechar.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        LabelFechar.setForeground(new java.awt.Color(103, 79, 117));
+        LabelFechar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelFechar.setText("X");
+        LabelFechar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelFecharMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PanelInicioLayout = new javax.swing.GroupLayout(PanelInicio);
+        PanelInicio.setLayout(PanelInicioLayout);
+        PanelInicioLayout.setHorizontalGroup(
+            PanelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(LabelJava, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(LabelAndroid, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(PanelInicioLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(LabelIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(ButtonConfiguracoes, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(ButtonSite, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(ButtonLinguagens, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(ButtonSair, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(LabelIcon))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-                .addComponent(ButtonInformacoes, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21))
+                .addComponent(LabelFechar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(3, 3, 3))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelInicioLayout.createSequentialGroup()
+                .addGap(0, 18, Short.MAX_VALUE)
+                .addComponent(LabelSQL, javax.swing.GroupLayout.PREFERRED_SIZE, 582, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(LabelPython, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+        PanelInicioLayout.setVerticalGroup(
+            PanelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelInicioLayout.createSequentialGroup()
+                .addGroup(PanelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(LabelIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LabelFechar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addComponent(LabelAndroid)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(LabelPython)
+                .addGap(12, 12, 12)
+                .addComponent(LabelJava)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(LabelSQL)
+                .addGap(0, 121, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(PanelInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 0, 600, 600));
+        PanelInicio.getAccessibleContext().setAccessibleName("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ButtonLinguagensActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLinguagensActionPerformed
+    private void LabelImagemEsquerdaMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelImagemEsquerdaMouseDragged
         // TODO add your handling code here:
-        // chamando a janela java
+        int x = evt.getXOnScreen();
+        int y = evt.getYOnScreen();
 
-        Java j = new Java();
-        j.setVisible(true);
-    }//GEN-LAST:event_ButtonLinguagensActionPerformed
-
-    private void ButtonConfiguracoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonConfiguracoesActionPerformed
+        this.setLocation(x - xx, y - xy);
+    }//GEN-LAST:event_LabelImagemEsquerdaMouseDragged
+    int xx, xy;
+    private void LabelImagemEsquerdaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelImagemEsquerdaMousePressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ButtonConfiguracoesActionPerformed
+        xx = evt.getX();
+        xy = evt.getY();
+    }//GEN-LAST:event_LabelImagemEsquerdaMousePressed
 
-    private void ButtonSiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSiteActionPerformed
+    private void LabelIrParaOSiteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelIrParaOSiteMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_ButtonSiteActionPerformed
+        String url = "http://elixirtcc.000webhostapp.com/registrar";
 
-    private void ButtonSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSairActionPerformed
+        if (Desktop.isDesktopSupported()) {
+            Desktop desktop = Desktop.getDesktop();
+            try {
+                desktop.browse(new URI(url));
+            } catch (IOException | URISyntaxException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        } else {
+            Runtime runtime = Runtime.getRuntime();
+            try {
+                runtime.exec("xdg-open " + url);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }//GEN-LAST:event_LabelIrParaOSiteMouseClicked
+
+    private void LabelSairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelSairMouseClicked
         // TODO add your handling code here:
         System.exit(0);
-    }//GEN-LAST:event_ButtonSairActionPerformed
+    }//GEN-LAST:event_LabelSairMouseClicked
 
-    private void ButtonInformacoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonInformacoesActionPerformed
+    private void LabelJavaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelJavaMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_ButtonInformacoesActionPerformed
+        Java java = new Java();
+        java.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_LabelJavaMouseClicked
+
+    private void LabelFecharMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelFecharMouseClicked
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_LabelFecharMouseClicked
 
     /**
      * @param args the command line arguments
@@ -217,13 +274,20 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ButtonConfiguracoes;
-    private javax.swing.JButton ButtonInformacoes;
-    private javax.swing.JButton ButtonLinguagens;
-    private javax.swing.JButton ButtonSair;
-    private javax.swing.JButton ButtonSite;
+    private javax.swing.JLabel LabelAndroid;
     private javax.swing.JLabel LabelBoasVindas;
+    private javax.swing.JLabel LabelConfiguracoesDaConta;
+    private javax.swing.JLabel LabelFechar;
     private javax.swing.JLabel LabelIcon;
+    private javax.swing.JLabel LabelImagemEsquerda;
+    private javax.swing.JLabel LabelInformacoesDoPrograma;
+    private javax.swing.JLabel LabelIrParaOSite;
+    private javax.swing.JLabel LabelJava;
+    private javax.swing.JLabel LabelMinhasLinguagens;
+    private javax.swing.JLabel LabelPython;
+    private javax.swing.JLabel LabelSQL;
+    private javax.swing.JLabel LabelSair;
     private javax.swing.JLabel LabelUser;
+    private javax.swing.JPanel PanelInicio;
     // End of variables declaration//GEN-END:variables
 }

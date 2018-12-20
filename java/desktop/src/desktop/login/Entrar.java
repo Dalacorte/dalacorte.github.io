@@ -6,13 +6,12 @@
 package desktop.login;
 
 import desktop.help.Ajuda;
-import java.awt.Color;
-import java.awt.Toolkit;
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.awt.event.WindowEvent;
-import javax.swing.JOptionPane;
-import desktop.login.load.Carregamento;
-import desktop.login.load.Carregamento;
-import javax.swing.ImageIcon;
+import java.net.URI;
+import desktop.main.Inicio;
 
 /**
  *
@@ -24,15 +23,13 @@ public class Entrar extends javax.swing.JFrame {
      * Creates new form Entrar
      */
     public Entrar() {
+        setUndecorated(true);
         initComponents();
-        setSize(400, 450);
+        setSize(1000, 600);
         setLocationRelativeTo(null);
         setTitle("Entrar");
         setResizable(false);
-        getContentPane().setBackground(Color.white);
         setDefaultCloseOperation(Entrar.EXIT_ON_CLOSE);
-        ImageIcon img = new ImageIcon("F:\\desktop\\src\\desktop\\image\\icon.png");
-        setIconImage(img.getImage());
     }
 
     /**
@@ -44,12 +41,22 @@ public class Entrar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        ButtonAjuda = new javax.swing.JButton();
-        TextUsuario = new javax.swing.JTextField();
-        LabelVersao = new javax.swing.JLabel();
-        PasswordSenha = new javax.swing.JPasswordField();
-        ButtonEntrar = new javax.swing.JButton();
+        LabelNome = new javax.swing.JLabel();
+        LabelRegistrar = new javax.swing.JLabel();
+        LabelCriador = new javax.swing.JLabel();
+        LabelImagemEsquerda = new javax.swing.JLabel();
+        PanelEntrar = new javax.swing.JPanel();
         LabelIcon = new javax.swing.JLabel();
+        TextUsuario = new javax.swing.JTextField();
+        PasswordSenha = new javax.swing.JPasswordField();
+        SeparadorSenha = new javax.swing.JSeparator();
+        SeparadorUsuario = new javax.swing.JSeparator();
+        LabelSenha = new javax.swing.JLabel();
+        LabelUsuario = new javax.swing.JLabel();
+        LabelEntrar = new javax.swing.JLabel();
+        LabelSair = new javax.swing.JLabel();
+        LabelVersao = new javax.swing.JLabel();
+        LabelAjuda = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -59,117 +66,276 @@ public class Entrar extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(250, 250));
         setName(""); // NOI18N
         setSize(new java.awt.Dimension(250, 250));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        ButtonAjuda.setBackground(new java.awt.Color(88, 63, 105));
-        ButtonAjuda.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        ButtonAjuda.setText("Ajuda");
-        ButtonAjuda.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonAjudaActionPerformed(evt);
+        LabelNome.setFont(new java.awt.Font("Monospaced", 0, 48)); // NOI18N
+        LabelNome.setForeground(new java.awt.Color(255, 255, 255));
+        LabelNome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelNome.setText("Elixir");
+        LabelNome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelNomeMouseClicked(evt);
             }
         });
+        getContentPane().add(LabelNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 150));
 
-        TextUsuario.setBackground(new java.awt.Color(103, 79, 117));
+        LabelRegistrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/registrar.png"))); // NOI18N
+        LabelRegistrar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelRegistrarMouseClicked(evt);
+            }
+        });
+        getContentPane().add(LabelRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 470, 400, -1));
+
+        LabelCriador.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        LabelCriador.setForeground(new java.awt.Color(255, 255, 255));
+        LabelCriador.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelCriador.setText("Criador: Okarin && Julio");
+        getContentPane().add(LabelCriador, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 550, 390, 35));
+
+        LabelImagemEsquerda.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        LabelImagemEsquerda.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelImagemEsquerda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/fundo.jpg"))); // NOI18N
+        LabelImagemEsquerda.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                LabelImagemEsquerdaMouseDragged(evt);
+            }
+        });
+        LabelImagemEsquerda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                LabelImagemEsquerdaMousePressed(evt);
+            }
+        });
+        getContentPane().add(LabelImagemEsquerda, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 600));
+
+        PanelEntrar.setBackground(new java.awt.Color(255, 255, 255));
+        PanelEntrar.setToolTipText("");
+
+        LabelIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/icon.png"))); // NOI18N
+
         TextUsuario.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        TextUsuario.setForeground(new java.awt.Color(103, 79, 117));
         TextUsuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        TextUsuario.setText("Usuário");
+        TextUsuario.setBorder(null);
+        TextUsuario.setCaretColor(new java.awt.Color(103, 79, 117));
         TextUsuario.setName(""); // NOI18N
+        TextUsuario.setSelectionColor(new java.awt.Color(103, 79, 117));
         TextUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextUsuarioActionPerformed(evt);
             }
         });
 
-        LabelVersao.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
-        LabelVersao.setText("Versão: 0.01");
-
-        PasswordSenha.setBackground(new java.awt.Color(103, 79, 117));
         PasswordSenha.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        PasswordSenha.setForeground(new java.awt.Color(103, 79, 117));
         PasswordSenha.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        PasswordSenha.setText("Senha");
+        PasswordSenha.setBorder(null);
+        PasswordSenha.setCaretColor(new java.awt.Color(103, 79, 117));
+        PasswordSenha.setSelectionColor(new java.awt.Color(103, 79, 117));
 
-        ButtonEntrar.setBackground(new java.awt.Color(255, 255, 255));
-        ButtonEntrar.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        ButtonEntrar.setText("Entrar");
-        ButtonEntrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonEntrarActionPerformed(evt);
+        LabelSenha.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        LabelSenha.setForeground(new java.awt.Color(103, 79, 117));
+        LabelSenha.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelSenha.setText("Senha");
+        LabelSenha.setToolTipText("");
+
+        LabelUsuario.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        LabelUsuario.setForeground(new java.awt.Color(103, 79, 117));
+        LabelUsuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelUsuario.setText("Usuário");
+        LabelUsuario.setToolTipText("");
+
+        LabelEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/entrar.png"))); // NOI18N
+        LabelEntrar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelEntrarMouseClicked(evt);
             }
         });
 
-        LabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/icon.png"))); // NOI18N
+        LabelSair.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        LabelSair.setForeground(new java.awt.Color(103, 79, 117));
+        LabelSair.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelSair.setText("X");
+        LabelSair.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelSairMouseClicked(evt);
+            }
+        });
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(LabelVersao)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(ButtonAjuda))
-                    .addComponent(TextUsuario, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(PasswordSenha)
-                    .addComponent(ButtonEntrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE))
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(125, 125, 125)
-                .addComponent(LabelIcon)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        LabelVersao.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        LabelVersao.setForeground(new java.awt.Color(103, 79, 117));
+        LabelVersao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelVersao.setText("Versão: 0.20 ");
+
+        LabelAjuda.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        LabelAjuda.setForeground(new java.awt.Color(103, 79, 117));
+        LabelAjuda.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelAjuda.setText("?");
+        LabelAjuda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelAjudaMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PanelEntrarLayout = new javax.swing.GroupLayout(PanelEntrar);
+        PanelEntrar.setLayout(PanelEntrarLayout);
+        PanelEntrarLayout.setHorizontalGroup(
+            PanelEntrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelEntrarLayout.createSequentialGroup()
+                .addGap(129, 129, 129)
+                .addGroup(PanelEntrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelEntrarLayout.createSequentialGroup()
+                        .addComponent(PasswordSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelEntrarLayout.createSequentialGroup()
+                        .addGroup(PanelEntrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelEntrarLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(LabelEntrar))
+                            .addComponent(LabelUsuario, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(SeparadorUsuario, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(TextUsuario, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SeparadorSenha, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(LabelSenha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(LabelVersao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(126, 126, 126))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelEntrarLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(LabelIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PanelEntrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(LabelSair, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LabelAjuda, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(15, Short.MAX_VALUE)
-                .addComponent(LabelIcon)
+        PanelEntrarLayout.setVerticalGroup(
+            PanelEntrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelEntrarLayout.createSequentialGroup()
+                .addGroup(PanelEntrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(LabelSair, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LabelIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(LabelUsuario)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(TextUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(SeparadorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(LabelSenha)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(PasswordSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(SeparadorSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addComponent(LabelEntrar)
                 .addGap(18, 18, 18)
-                .addComponent(TextUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(PasswordSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(ButtonEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ButtonAjuda, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(LabelVersao, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                .addGroup(PanelEntrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelEntrarLayout.createSequentialGroup()
+                        .addComponent(LabelVersao, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelEntrarLayout.createSequentialGroup()
+                        .addComponent(LabelAjuda, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(21, 21, 21))))
         );
+
+        getContentPane().add(PanelEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 0, 600, 600));
 
         getAccessibleContext().setAccessibleDescription("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ButtonAjudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonAjudaActionPerformed
-        // TODO add your handling code here:
-        Ajuda a = new Ajuda();
-        a.setVisible(true);    
-    }//GEN-LAST:event_ButtonAjudaActionPerformed
-
     private void TextUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextUsuarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TextUsuarioActionPerformed
 
-    private void ButtonEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonEntrarActionPerformed
+    private void LabelSairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelSairMouseClicked
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_LabelSairMouseClicked
+    int xx, xy;
+    private void LabelImagemEsquerdaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelImagemEsquerdaMousePressed
+        // TODO add your handling code here:
+        xx = evt.getX();
+        xy = evt.getY();
+    }//GEN-LAST:event_LabelImagemEsquerdaMousePressed
+
+    private void LabelImagemEsquerdaMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelImagemEsquerdaMouseDragged
+        // TODO add your handling code here:
+        int x = evt.getXOnScreen();
+        int y = evt.getYOnScreen();
+
+        this.setLocation(x - xx, y - xy);
+    }//GEN-LAST:event_LabelImagemEsquerdaMouseDragged
+
+    private void LabelRegistrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelRegistrarMouseClicked
+        // TODO add your handling code here:
+        String url = "http://elixirtcc.000webhostapp.com/registrar";
+
+        if (Desktop.isDesktopSupported()) {
+            Desktop desktop = Desktop.getDesktop();
+            try {
+                desktop.browse(new URI(url));
+            } catch (IOException | URISyntaxException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        } else {
+            Runtime runtime = Runtime.getRuntime();
+            try {
+                runtime.exec("xdg-open " + url);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }//GEN-LAST:event_LabelRegistrarMouseClicked
+
+    private void LabelAjudaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelAjudaMouseClicked
+        // TODO add your handling code here:
+        Ajuda ajuda = new Ajuda();
+        ajuda.setVisible(true);
+    }//GEN-LAST:event_LabelAjudaMouseClicked
+
+    private void LabelEntrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelEntrarMouseClicked
         // TODO add your handling code here:
         String usuario = TextUsuario.getText();
         String senha = PasswordSenha.getText();
-        
-        if(senha.contains("0") && (usuario.contains("0"))){
-            TextUsuario.setText(null);
-            PasswordSenha.setText(null);
-            systemExit();
-            
-            Carregamento c = new Carregamento();
-            c.setVisible(true);
-        }else{
-            JOptionPane.showMessageDialog(null,"Não foi possível realizar o login", "Erro", JOptionPane.ERROR_MESSAGE);
-            TextUsuario.setText(null);
-            PasswordSenha.setText(null);
+
+        if (usuario.contains("0") && senha.contains("0")) {
+            Inicio inicio = new Inicio();
+            inicio.setVisible(true);
+            //Carregamento carregamento = new Carregamento();
+            //carregamento.setVisible(true);
+            setVisible(false);
+        } else {
+            System.out.println("error");
         }
-    }//GEN-LAST:event_ButtonEntrarActionPerformed
+    }//GEN-LAST:event_LabelEntrarMouseClicked
+
+    private void LabelNomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelNomeMouseClicked
+        // TODO add your handling code here:
+        String url = "http://elixirtcc.000webhostapp.com/registrar";
+
+        if (Desktop.isDesktopSupported()) {
+            Desktop desktop = Desktop.getDesktop();
+            try {
+                desktop.browse(new URI(url));
+            } catch (IOException | URISyntaxException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        } else {
+            Runtime runtime = Runtime.getRuntime();
+            try {
+                runtime.exec("xdg-open " + url);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }//GEN-LAST:event_LabelNomeMouseClicked
 
     /**
      * @param args the command line arguments
@@ -199,7 +365,6 @@ public class Entrar extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Entrar().setVisible(true);
@@ -208,15 +373,25 @@ public class Entrar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ButtonAjuda;
-    private javax.swing.JButton ButtonEntrar;
+    private javax.swing.JLabel LabelAjuda;
+    private javax.swing.JLabel LabelCriador;
+    private javax.swing.JLabel LabelEntrar;
     private javax.swing.JLabel LabelIcon;
+    private javax.swing.JLabel LabelImagemEsquerda;
+    private javax.swing.JLabel LabelNome;
+    private javax.swing.JLabel LabelRegistrar;
+    private javax.swing.JLabel LabelSair;
+    private javax.swing.JLabel LabelSenha;
+    private javax.swing.JLabel LabelUsuario;
     private javax.swing.JLabel LabelVersao;
+    private javax.swing.JPanel PanelEntrar;
     private javax.swing.JPasswordField PasswordSenha;
+    private javax.swing.JSeparator SeparadorSenha;
+    private javax.swing.JSeparator SeparadorUsuario;
     private javax.swing.JTextField TextUsuario;
     // End of variables declaration//GEN-END:variables
 
-    private void systemExit(){
+    private void systemExit() {
         WindowEvent winCloseing = new WindowEvent(this, WindowEvent.WINDOW_CLOSING);
     }
 }

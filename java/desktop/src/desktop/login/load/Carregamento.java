@@ -6,7 +6,10 @@
 package desktop.login.load;
 
 import desktop.login.Entrar;
+import desktop.main.Inicio;
 import java.awt.Color;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 
 /**
@@ -19,14 +22,12 @@ public class Carregamento extends javax.swing.JFrame {
      * Creates new form Carregamento
      */
     public Carregamento() {
+        setUndecorated(true);
         initComponents();
-        setSize(400, 400);
+        setSize(500, 500);
         setLocationRelativeTo(null);
         setTitle("Carregamento");
         setResizable(false);
-        getContentPane().setBackground(Color.white);
-        ImageIcon img = new ImageIcon("F:\\desktop\\src\\desktop\\image\\icon.png");
-        setIconImage(img.getImage());
     }
 
     /**
@@ -38,59 +39,72 @@ public class Carregamento extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        PanelLoad = new javax.swing.JPanel();
         LabelIcon = new javax.swing.JLabel();
-        ProgressBar = new javax.swing.JProgressBar();
         LabelLink = new javax.swing.JLabel();
         LabelNome = new javax.swing.JLabel();
+        ProgressBar = new javax.swing.JProgressBar();
+
+        jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(300, 300));
         setSize(new java.awt.Dimension(300, 300));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        PanelLoad.setBackground(new java.awt.Color(255, 255, 255));
+
+        LabelIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desktop/image/icon.png"))); // NOI18N
 
         LabelLink.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        LabelLink.setForeground(new java.awt.Color(103, 79, 117));
+        LabelLink.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelLink.setText("https://www.elixirtcc.com");
 
         LabelNome.setFont(new java.awt.Font("Monospaced", 0, 36)); // NOI18N
+        LabelNome.setForeground(new java.awt.Color(103, 79, 117));
+        LabelNome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelNome.setText("Elixir");
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+        ProgressBar.setBackground(new java.awt.Color(255, 255, 255));
+        ProgressBar.setForeground(new java.awt.Color(103, 79, 117));
+        ProgressBar.setBorderPainted(false);
+        ProgressBar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        javax.swing.GroupLayout PanelLoadLayout = new javax.swing.GroupLayout(PanelLoad);
+        PanelLoad.setLayout(PanelLoadLayout);
+        PanelLoadLayout.setHorizontalGroup(
+            PanelLoadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelLoadLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(ProgressBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(PanelLoadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(LabelIcon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelLoadLayout.createSequentialGroup()
+                        .addComponent(LabelNome, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(PanelLoadLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(LabelIcon)
-                        .addGap(122, 122, 122))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addComponent(LabelLink)
-                .addGap(0, 65, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(LabelNome)
-                .addGap(130, 130, 130))
+                        .addComponent(LabelLink, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+            .addComponent(ProgressBar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(LabelIcon)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        PanelLoadLayout.setVerticalGroup(
+            PanelLoadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelLoadLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(LabelIcon, javax.swing.GroupLayout.DEFAULT_SIZE, 331, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(LabelNome)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(15, 15, 15)
                 .addComponent(LabelLink)
                 .addGap(18, 18, 18)
-                .addComponent(ProgressBar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(ProgressBar, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
+
+        getContentPane().add(PanelLoad, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -98,7 +112,7 @@ public class Carregamento extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[]) throws InterruptedException {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -125,15 +139,17 @@ public class Carregamento extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Carregamento().setVisible(true);
+                    new Carregamento().setVisible(true);
             }
         });
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel LabelIcon;
     private javax.swing.JLabel LabelLink;
     private javax.swing.JLabel LabelNome;
-    private javax.swing.JProgressBar ProgressBar;
+    private javax.swing.JPanel PanelLoad;
+    protected javax.swing.JProgressBar ProgressBar;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
